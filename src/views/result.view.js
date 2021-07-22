@@ -38,22 +38,21 @@ function printResult(calculatedResult) {
       )
     );
 
+    console.log(chalk.blueBright(`Tax Deduction Summary`));
+    printTable(calculatedResult.taxDeductionSummary);
+
     console.log(
       `\n\nYour total deductable tax amount as per ${
         calculatedResult.year
       } Tax Bracket Chart is ${chalk.green(
         "$",
         toCommaSepartedValue(calculatedResult.totalDeductable)
-      )}\n\n\n`
+      )}`
     );
-
-    console.log(chalk.blueBright(`Tax Deduction Summary`));
-    printTable(calculatedResult.taxDeductionSummary);
-
     console.log(
       `\n\nYour Effective Tax Rate is ${chalk.green(
         calculatedResult.effectiveRate
-      )}\n\n\n`
+      )}`
     );
 
     console.log(

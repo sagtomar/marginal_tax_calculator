@@ -4,6 +4,7 @@
   "description": "A Nodejs CLI to calculate marginal tax for the user's provided salary. Uses 3rd party API to fetch tax brackets for calculation.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "mocha"
   },
   "author": "Sagar Tomar",
